@@ -1,0 +1,34 @@
+[
+ {
+  "default_value": null,
+  "doc_type": "Subscription Plan",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "price_determination",
+  "is_system_generated": 0,
+  "modified": "2025-03-16 08:11:47.938045",
+  "module": "Subscription Plan Custom",
+  "name": "Subscription Plan-price_determination-options",
+  "property": "options",
+  "property_type": null,
+  "row_name": null,
+  "value": "\nFixed Rate\nBased On Price List\nMonthly Rate\nDaily Rate"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Subscription Plan",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "cost",
+  "is_system_generated": 0,
+  "modified": "2025-03-16 08:14:55.686878",
+  "module": "Subscription Plan Custom",
+  "name": "Subscription Plan-cost-depends_on",
+  "property": "depends_on",
+  "property_type": null,
+  "row_name": null,
+  "value": "eval:['Fixed Rate', 'Monthly Rate', 'Daily Rate'].includes(doc.price_determination)"
+ }
+]
