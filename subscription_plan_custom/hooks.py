@@ -129,9 +129,9 @@ app_license = "mit"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Subscription": "subscription_plan_custom.subscription_override.CustomSubscription"
+}
 
 # Document Events
 # ---------------
@@ -174,9 +174,9 @@ app_license = "mit"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "subscription_plan_custom.event.get_events"
-# }
+override_whitelisted_methods = {
+	"erpnext.account.doctype.subscription_plan.subscription_plan.get_plan_rate": "subscription_plan_custom.subscription_override.get_plan_rate"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
